@@ -1,0 +1,4 @@
+# name: local bootstrap
+# key: localbootstrap
+# --
+<link rel="stylesheet" href="http://localhost/public/bootstrap/bootstrap-3.0.0/dist/css/bootstrap.min.css" type="text/css" media="screen" />

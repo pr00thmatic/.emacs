@@ -1,0 +1,6 @@
+# name: phaser game
+# key: game
+# --
+var game = new Phaser.Game(${1:width}, ${2:height}, Phaser.AUTO, '{3:div id}');
+game.state.add(${4:'name of level'}, ${5:level});
+game.state.start('name of level');

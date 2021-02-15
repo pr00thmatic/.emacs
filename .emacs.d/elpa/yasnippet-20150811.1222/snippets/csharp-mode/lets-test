@@ -1,0 +1,25 @@
+# expand-env: ((yas-indent-line 'fixed))
+# name: lets test!
+# key: lets-jam
+# --
+using System.Collections;
+using System.Collections.Generic;
+using NUnit.Framework;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.TestTools;
+
+namespace Tests {
+    public class ${1:`(file-name-base buffer-file-name)`} {
+        [Test]
+        public void PlayModeTestSimplePasses () {
+        }
+
+        [UnityTest]
+        public IEnumerator PlayModeTestWithEnumeratorPasses() {
+            SceneManager.LoadScene("$2");
+            yield return null;
+            $0
+        }
+    }
+}

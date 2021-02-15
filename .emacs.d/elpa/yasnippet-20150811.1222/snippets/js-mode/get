@@ -1,0 +1,11 @@
+# name: get
+# key: get
+# --
+$.ajax({
+    type: 'GET',
+    url: ${1:localhost},
+    success: function (output, status, xhr) {
+	$0
+    },
+    cache: false
+});

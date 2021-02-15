@@ -1,0 +1,4 @@
+# name: closed tag
+# key: </
+# --
+<$1 />$0

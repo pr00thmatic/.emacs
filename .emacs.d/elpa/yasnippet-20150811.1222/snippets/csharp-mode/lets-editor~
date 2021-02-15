@@ -1,0 +1,38 @@
+# expand-env: ((yas-indent-line 'fixed))
+# name: lets editor!
+# key: lets-jam
+# --
+using UnityEngine;
+using UnityEditor;
+
+[CustomEditor(typeof(${2:`(file-name-base buffer-file-name)`}))]
+public class ${1:`(file-name-base buffer-file-name)`} : Editor {
+    $2 Target { get => ($2) target; }
+
+    // https://docs.unity3d.com/ScriptReference/EditorGUILayout.html
+    // https://docs.unity3d.com/ScriptReference/GUILayout.html
+    public override void OnInspectorGUI () {
+        DrawDefaultInspector();$0
+
+        if (GUI.changed && !Application.isPlaying) {
+            EditorUtility.SetDirty(Target);
+            EditorSceneManager.MarkSceneDirty(Target.gameObject.scene);
+        }
+    }
+
+    // https://docs.unity3d.com/ScriptReference/Gizmos.html
+    // https://docs.unity3d.com/ScriptReference/Handles.html
+    // https://docs.unity3d.com/ScriptReference/IMGUI.Controls.BoxBoundsHandle.html
+    public static void DrawGizmos ($2 customTarget) {
+        Handles.matrix = customTarget.transform.localToWorldMatrix;
+    }
+
+    void OnSceneGUI () {
+        DrawGizmos(Target)
+
+        if (GUI.changed && !Application.isPlaying) {
+            EditorUtility.SetDirty(Target);
+            EditorSceneManager.MarkSceneDirty(Target.gameObject.scene);
+        }
+    }
+}

@@ -1,0 +1,35 @@
+\usepackage{}
+
+\newcommand{\problem} [1]{
+  \renewcommand*{\p}{\ppath/#1/}
+  \begin{center}\huge{\subimport{\p}{title}}\end{center}
+  \subimport{\p}{statement}
+
+  \textbf{INPUT}
+
+  \subimport{\p}{input}
+
+  \textbf{OUTPUT}
+
+  \subimport{\p}{output}
+
+  \textbf{EXAMPLE}
+
+  \begin{multicols} {2}
+    \textbf{INPUT}
+    \lstinputlisting{\p solution/example.in}
+    \columnbreak
+    \textbf{OUTPUT}
+    \lstinputlisting{\p solution/example.out}
+  \end{multicols}
+}
+
+\begin{document}
+\problem{medidor}
+\newpage
+\problem{minecraft}
+\newpage
+\problem{la-torre-de-taburetes}
+\newpage
+\problem{torre-humana}
+\end{document}

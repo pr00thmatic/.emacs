@@ -1,0 +1,2 @@
+;;; Generated package description from c:/Users/vreality-mvgraph/.emacs.d/elpa/weyland-yutani-theme-20210212.1514/weyland-yutani-theme.el  -*- no-byte-compile: t -*-
+(define-package "weyland-yutani-theme" "20210212.1514" "Emacs theme based off Alien movie franchise" '((emacs "24.1")) :commit "2c0ade85ef96ce311dcf10f915af5c3696c333bf" :authors '(("Joe Staursky")) :maintainer '("Joe Staursky") :url "https://github.com/jstaursky/weyland-yutani-theme")

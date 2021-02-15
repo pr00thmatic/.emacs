@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <!-- bootstrap styles -->
+    <link rel="stylesheet" href="${where-is-it}/dist/css/bootstrap.min.css" type="text/css" media="screen" />
+  </head>
+  <body role="application">
+    ${}
+  </body>
+</html>

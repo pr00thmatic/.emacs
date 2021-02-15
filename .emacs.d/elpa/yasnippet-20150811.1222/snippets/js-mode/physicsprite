@@ -1,0 +1,4 @@
+# name: phaser add physics to sprite
+# key: physicsprite
+# --
+game.physics.enable(${1:sprite}, Phaser.Physics.${2:ARCADE});

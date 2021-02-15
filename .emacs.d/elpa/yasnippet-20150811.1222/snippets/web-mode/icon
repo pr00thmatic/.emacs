@@ -1,0 +1,4 @@
+# name: icon on the titlebar of the window.
+# key: icon
+# --
+<link rel="shortcut icon" href="${1:ico.ico}" />

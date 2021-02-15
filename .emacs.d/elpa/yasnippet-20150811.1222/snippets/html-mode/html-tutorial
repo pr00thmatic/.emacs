@@ -1,0 +1,17 @@
+# name: esqueleto de html
+# key: html
+# --
+<!DOCTYPE html>
+
+<html lang="${1:es}">
+  <head>
+    <meta charset="${2:utf-8}" />
+    <title>$3</title>
+  </head>
+  
+  <body>
+    $0
+  </body>
+</html>
+
+

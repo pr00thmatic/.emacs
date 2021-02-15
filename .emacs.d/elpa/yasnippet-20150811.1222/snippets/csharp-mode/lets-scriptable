@@ -1,0 +1,12 @@
+# expand-env: ((yas-indent-line 'fixed))
+# name: lets scriptable!
+# key: lets-jam
+# --
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+[CreateAssetMenu(fileName = "$1", menuName = "$2")]
+public class $1 : ScriptableObject {
+  $0
+\}

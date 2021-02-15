@@ -1,0 +1,8 @@
+# name: bootstrap form
+# key: form
+# --
+<form method="${1:post}" id="$2" action="${3:wut.php}" role="form"> 
+  <div class="form-group">
+    $0    
+  </div>
+</form>

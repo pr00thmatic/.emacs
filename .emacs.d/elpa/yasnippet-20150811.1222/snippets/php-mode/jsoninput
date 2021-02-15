@@ -1,0 +1,4 @@
+# name: get the input into a json
+# key: jsoninput
+# --
+$input = json_decode(file_get_contents('php://input'), true);

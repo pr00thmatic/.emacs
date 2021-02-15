@@ -1,0 +1,7 @@
+# name: phaser sprite
+# key: addsprite
+# --
+${1:var s} = game.add.sprite(${2:x}, ${3:y}, '${4:name}');
+${5:$1}.anchor.setTo(${6:0.5},${7:0.5});
+addanimation
+physicsprite

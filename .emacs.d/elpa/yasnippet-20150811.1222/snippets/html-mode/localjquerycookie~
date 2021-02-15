@@ -1,0 +1,4 @@
+# name: local jquery cookie
+# key: localjquerycookie
+# --
+<script type="text/javascript" src="http://localhost/jquery.cookie.min.js"></script>

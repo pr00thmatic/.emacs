@@ -1,0 +1,17 @@
+# name: jquery ajax
+# key: $.ajax
+# --
+\$.ajax({
+    type: "${1:POST}",
+    url: "${2:php.php}",
+
+    data: ${3:JSON.stringify( \$( ${4:'#form'} ).serializeArray() )},
+
+    success: function (response) {
+        $0
+    },
+
+    error: function () {
+        console.error("the request didn't work :(");
+    }
+});

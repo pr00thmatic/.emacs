@@ -1,0 +1,4 @@
+# name: local phaser
+# key: localphaser
+# --
+<script type="text/javascript" src="http://localhost/public/phaser.js"></script>

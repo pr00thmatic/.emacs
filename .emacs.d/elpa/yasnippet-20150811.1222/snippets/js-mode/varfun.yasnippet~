@@ -1,0 +1,7 @@
+# contribbutor: r00th <vengadoravg@gmail.com>
+# name: var foo = function...
+# key: varfun
+# --
+var ${1:foo} = function ($2) {
+    $0
+};

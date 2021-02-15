@@ -1,0 +1,5 @@
+# name: qunit debug
+# key: debug
+# --
+<div id="qunit">  </div>
+<div id="qunit-fixture">  </div>$0

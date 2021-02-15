@@ -1,0 +1,4 @@
+# name: local phaser isometric plugin
+# key: localphaseriso
+# --
+<script src="http://localhost/public/phaser-plugin-isometric/dist/phaser-plugin-isometric.js"></script>

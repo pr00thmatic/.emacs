@@ -1,0 +1,26 @@
+# expand-env: ((yas-indent-line 'fixed))
+# name: lets editor!
+# key: lets-jam
+# --
+using UnityEngine;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+
+[CustomEditor(typeof(${2:`(file-name-base buffer-file-name)`}))]
+public class ${1:`(file-name-base buffer-file-name)`} : Editor {
+    $2 Target { get => ($2) target; }
+
+    public override void OnInspectorGUI () {
+        DrawDefaultInspector();$0
+    }
+
+    public static void DrawGizmos ($2 customTarget) {
+        using (new Handles.DrawingScope(Handles.color, customTarget.transform.localToWorldMatrix)) {
+
+        }
+    }
+
+    void OnSceneGUI () {
+        DrawGizmos(Target);
+    }
+}

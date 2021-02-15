@@ -1,0 +1,7 @@
+var game = new Phaser.Game(winSize[0], winSize[1], 
+    	       		   Phaser.AUTO, '', 
+			   { preload: preload, 
+			     create: create,
+			     update: update
+			   }
+			  );

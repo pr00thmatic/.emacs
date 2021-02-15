@@ -1,0 +1,4 @@
+# name: bootstrap alert
+# key: alert
+# --
+<div class="alert alert-${1:info}" role="alert" id="${2:id}"> $0 </div>

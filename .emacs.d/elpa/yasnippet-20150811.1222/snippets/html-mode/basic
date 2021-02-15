@@ -1,0 +1,23 @@
+# name: basic skeleton for html
+# key: html
+# --
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet"
+	  href="${1:url}" 
+	  type="text/css"
+	  media="screen" />
+    
+    <script src="${2:url}"></script>
+
+    <meta charset=utf-8 />
+    <title>${3:title! :D}</title>
+  </head>
+  <body>
+      
+  </body>
+</html>

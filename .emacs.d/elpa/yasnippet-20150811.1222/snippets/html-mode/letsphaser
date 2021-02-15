@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>${1::D}</title>
+    <script type = "text/javascript" src="${2:js/phaser.min.js}"></script>
+  </head>
+  <body>
+    <script type="text/javascript" src="${3}"></script>
+    $0
+  </body>
+</html>

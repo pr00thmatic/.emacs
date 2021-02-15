@@ -1,0 +1,15 @@
+# name: singleton
+# key: singleton
+# --
+public static ${1:`(file-name-base buffer-file-name)`} Instance { get => _instance; }
+static $1 _instance;
+
+void Awake () {
+    if (_instance != null && _instance != this) {
+        Destroy(this);
+        return;
+    }
+
+    _instance = this;
+}
+$0

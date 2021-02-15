@@ -1,0 +1,1 @@
+<canvas id="${1:name}" width="${2:490}" height="${3:220}"> </canvas>$0

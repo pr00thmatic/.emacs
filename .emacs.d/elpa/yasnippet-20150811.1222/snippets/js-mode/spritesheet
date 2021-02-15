@@ -1,0 +1,4 @@
+# name: phaser load spritesheet
+# key: spritesheet
+# --
+game.load.spritesheet('${1:name}', 'img/$1.${2:png}', $3, ${4:$3});$0

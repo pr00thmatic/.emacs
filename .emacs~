@@ -1,0 +1,418 @@
+;; (add-hook 'after-init-hook (lambda () ((load-theme 'base16-shapeshifter-dark))))
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
+
+;; wtf?!
+(global-set-key (kbd "M-;") 'beginning-of-buffer)
+(global-set-key (kbd "M-:") 'end-of-buffer)
+(global-set-key (kbd "M--") 'dabbrev-expand)
+
+;; whitespace inquisition
+(global-set-key "\C-\M-z" 'whitespace-cleanup)
+
+;; js indent at 2
+(setq js-indent-level 2)
+;; c# indent at 2
+(setq c-basic-offset 2)
+
+;; wind moves
+(windmove-default-keybindings)
+
+;; shut up emacs!
+(setq ring-bell-function 'ignore)
+
+;; transparent emacs
+(set-frame-parameter (selected-frame) 'alpha '(90 90))
+(set-face-attribute 'default nil :background "#000000"
+                    :foreground "white")
+
+;; full screen
+(toggle-frame-fullscreen)
+
+;; coding goods
+(show-paren-mode 1)
+
+(setq package-enable-at-startup nil
+      package-archives '(("org" . "http://orgmode.org/elpa/")
+                         ("melpa" . "http://melpa.org/packages/")
+                         ("gnu" . "http://elpa.gnu.org/packages/")
+                         ;; ("elpy" . "https://jorgenschaefer.github.io/packages/")
+                         ;; ("marmalade" . "http://marmalade-repo.org/packages/") ;
+                         ))
+;; ;; melpa
+;; (require 'package) ;; You might already have this line
+;; (add-to-list 'package-archives
+;;              '("melpa" . "http://melpa.org/packages/"))
+;; (when (< emacs-major-version 24)
+;;   ;; For important compatibility libraries like cl-lib
+;;   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+;; (setq package-archives '(("melpa" . "http://melpa.org/packages/")))
+;; (package-initialize) ;; You might already have this line
+
+;; emacs o.O
+
+;; ****** YASNIPPET ******
+;; yasnippet popup menu
+;;; use popup menu for yas-choose-value
+(require 'popup)
+;; (require 'nlinum-hl)
+(global-linum-mode)
+
+;; add some shotcuts in popup menu mode
+(define-key popup-menu-keymap (kbd "M-n") 'popup-next)
+(define-key popup-menu-keymap (kbd "TAB") 'popup-next)
+(define-key popup-menu-keymap (kbd "<tab>") 'popup-next)
+(define-key popup-menu-keymap (kbd "<backtab>") 'popup-previous)
+(define-key popup-menu-keymap (kbd "M-p") 'popup-previous)
+
+(defun yas-popup-isearch-prompt (prompt choices &optional display-fn)
+  (when (featurep 'popup)
+    (popup-menu*
+     (mapcar
+      (lambda (choice)
+        (popup-make-item
+         (or (and display-fn (funcall display-fn choice))
+             choice)
+         :value choice))
+      choices)
+     :prompt prompt
+     ;; start isearch mode immediately
+     :isearch t
+     )))
+
+(setq yas-prompt-functions '(yas-popup-isearch-prompt yas-ido-prompt yas-no-prompt))
+
+;; yasnippet on load
+(yas-global-mode 1)
+(add-hook 'term-mode-hook (lambda ()
+                            (yas-minor-mode -1)))
+
+
+;; 73 ^
+
+
+;; masm
+(require 'asm-mode)
+(add-hook 'asm-mode-hook (lambda ()
+                           (setq indent-tabs-mode nil) ; use spaces to indent
+                           (electric-indent-mode -1) ; indentation in asm-mode is annoying
+                           (setq tab-stop-list (number-sequence 2 60 2))))
+
+
+(define-key asm-mode-map (kbd "<ret>") 'newline-and-indent)
+(define-key asm-mode-map (kbd "M-.") 'helm-etags-select)
+
+
+;; firebot mode
+(defun lets-firebot ()
+  (interactive)
+  (make-variable-buffer-local 'c-basic-offset)
+  (set-variable 'c-basic-offset 4))
+
+;; copy from pdf
+(defun purge-pdf ()
+  (interactive)
+  (progn
+    (goto-char 1)
+    ;; párrafos a salto auxiliar
+    (while (search-forward-regexp "\\([.\)]\\)\\($\\)\\([^\-]\\)" nil t)
+      (goto-char (match-end 0))
+      (insert "ZOMGZALIENZ"))
+    ;; saltos dentro del párrafo
+    (goto-char 1)
+    (while (search-forward-regexp "\\($\\)\\([^$]\\)" nil t)
+      (replace-match " "))
+    ;; salto auxiliar a doble salto
+    (goto-char 1)
+    (while (search-forward "ZOMGZALIENZ" nil t) (replace-match "\n\n"))
+    ;; vocales y eñes
+    (goto-char 1)
+    (while (search-forward-regexp " ́\\(\s\\)?a" nil t) (replace-match "á"))
+    (goto-char 1)
+    (while (search-forward-regexp " ́\\(\s\\)?e" nil t) (replace-match "é"))
+    (goto-char 1)
+    (while (search-forward-regexp " ́\\(\s\\)?ı" nil t) (replace-match "í"))
+    (goto-char 1)
+    (while (search-forward-regexp " ́\\(\s\\)?o" nil t) (replace-match "ó"))
+    (goto-char 1)
+    (while (search-forward-regexp " ́\\(\s\\)?u" nil t) (replace-match "ú"))
+    (goto-char 1)
+    (while (search-forward-regexp " ̃\\(\s\\)?n" nil t) (replace-match "ñ"))
+    ;; comillas feas, a comillas latex
+    (goto-char 1)
+    (while (search-forward "“" nil t) (replace-mat
+                                       ch "``"))
+    (goto-char 1)
+    (while (search-forward "”" nil t) (replace-match "''"))
+    ))
+
+(defun lazy-spanglish ()
+  (interactive)
+  (while (search-forward "'a" nil t) (replace-match "á"))
+  (goto-char 1)
+  (while (search-forward "'e" nil t) (replace-match "é"))
+  (goto-char 1)
+  (while (search-forward "'i" nil t) (replace-match "í"))
+  (goto-char 1)
+  (while (search-forward "'o" nil t) (replace-match "ó"))
+  (goto-char 1)
+  (while (search-forward "'u" nil t) (replace-match "ú"))
+  (goto-char 1)
+  (while (search-forward "~n" nil t) (replace-match "ñ"))
+  )
+
+
+(setq-default indent-tabs-mode nil)
+
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.shader\\'" . shader-mode))
+(add-to-list 'auto-mode-alist '("\\.script\\'" . lua-mode))
+
+
+(defun my-web-mode-hook ()
+  (setq web-mode-markup-indent-offset 2))
+
+(add-hook 'web-mode-hook 'my-web-mode-hook)
+
+;; js doc
+(require 'js-doc)
+(add-hook 'js-mode-hook
+          #'(lambda ()
+              (define-key js2-mode-map "\C-ci" 'js-doc-insert-function-doc)
+              (define-key js2-mode-map "@" 'js-doc-insert-tag)))
+
+
+;; shader mode
+(add-to-list 'load-path "C:/Users/VG/.emacs.d/shader-mode.el")
+
+;; tern :O
+;; (add-to-list 'load-path "/home/vg/.emacs.d/tern/tern/emacs/")
+;; (autoload 'tern-mode "tern.el" nil t)
+;; (add-hook 'js-mode-hook (lambda () (tern-mode t)))
+;; (eval-after-load 'tern
+;;   '(progn
+;;      (require 'tern-auto-complete)
+;;      (tern-ac-setup)))
+;; autocomplete
+(global-auto-complete-mode t)
+(put 'erase-buffer 'disabled nil)
+
+(prefer-coding-system 'utf-8)
+
+;; don't go away,
+;; and leave me there,
+;; wondering what my mistake was,
+;; wondering if you'll ever remember,
+;; anything i said to you on the past.
+(global-unset-key "\C-z")
+
+
+(add-hook 'artist-mode-hook
+          (lambda ()
+            (local-set-key (kbd "<f1>") 'org-mode)
+            (local-set-key (kbd "<f2>") 'artist-select-op-pen-line) ; f2 = pen mode
+            (local-set-key (kbd "<f3>") 'artist-select-op-line)     ; f3 = line
+            (local-set-key (kbd "<f4>") 'artist-select-op-square)   ; f4 = rectangle
+            (local-set-key (kbd "<f5>") 'artist-select-op-ellipse)  ; f5 = ellipse
+            (local-set-key (kbd "C-z") 'undo)
+            ))
+
+;; ;; squared font for artist mode
+;; (add-hook 'artist-mode-hook (lambda ()
+;;                               (setq buffer-face-mode-face '(:family "Topaz-8"))
+;;                               (buffer-face-mode)))
+
+
+(defun rename-file-and-buffer (new-name)
+  "Renames both current buffer and file it's visiting to NEW-NAME."
+  (interactive "sNew name: ")
+  (let ((name (buffer-name))
+        (filename (buffer-file-name)))
+    (if (not filename)
+        (message "Buffer '%s' is not visiting a file!" name)
+      (if (get-buffer new-name)
+          (message "A buffer named '%s' already exists!" new-name)
+        (progn
+          (rename-file filename new-name 1)
+          (rename-buffer new-name)
+          (set-visited-file-name new-name)
+          (set-buffer-modified-p nil))))))
+
+(defun close-all-buffers ()
+  (interactive)
+  (mapc 'kill-buffer (buffer-list)))
+
+;; (require 'smooth-scrolling)
+;; (smooth-scrolling-mode 1)
+;; (setq smooth-scroll-margin 5)
+
+(setq lua-child-indent 3)
+
+(setq backup-directory-alist
+      `((".*" . "~/.emacs-saves/")))
+(setq auto-save-file-name-transforms
+      `((".*" "~/.emacs-saves/" t)))
+
+(global-set-key (kbd "M-q") 'kill-ring-save)
+(global-set-key (kbd "C-q") 'kill-region)
+
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(ansi-color-faces-vector
+;;    [default default default italic underline success warning error])
+;;  '(ansi-color-names-vector
+;;    ["#000000" "#8b0000" "#00ff00" "#ffa500" "#7b68ee" "#dc8cc3" "#93e0e3" "#dcdccc"])
+;;  '(ansi-term-color-vector
+;;    [unspecified "#090300" "#db2d20" "#01a252" "#fded02" "#01a0e4" "#a16a94" "#01a0e4" "#a5a2a2"])
+;;  '(beacon-color "#F8BBD0")
+;;  '(custom-enabled-themes (quote (abyss)))
+;;  '(custom-safe-themes
+;;    (quote
+;;     ("c70799e6420521bdd782842cd38ed9d18ba221ca294098f786e2c4ca4b2e9521" "d8dc153c58354d612b2576fea87fe676a3a5d43bcc71170c62ddde4a1ad9e1fb" "5e3fc08bcadce4c6785fc49be686a4a82a356db569f55d411258984e952f194a" "a0feb1322de9e26a4d209d1cfa236deaf64662bb604fa513cca6a057ddf0ef64" "ab04c00a7e48ad784b52f34aa6bfa1e80d0c3fcacc50e1189af3651013eb0d58" "04dd0236a367865e591927a3810f178e8d33c372ad5bfef48b5ce90d4b476481" "7356632cebc6a11a87bc5fcffaa49bae528026a78637acd03cae57c091afd9b9" "24fc62afe2e5f0609e436aa2427b396adf9a958a8fa660edbaab5fb13c08aae6" "e7b49145d311e86da34a32a7e1f73497fa365110a813d2ecd8105eaa551969da" "3514fe07ecd0dc2f8b747706370c169b3d8053f825c009414e1a86eac8978327" "8a97050c9dd0af1cd8c3290b061f4b6032ccf2044ddc4d3c2c39e516239b2463" "a7004835dd02c73989032e57574087ec78ce8c2dd0d79f21cdd7423c01d9d2f5" "59e82a683db7129c0142b4b5a35dbbeaf8e01a4b81588f8c163bd255b76f4d21" "fc7fd2530b82a722ceb5b211f9e732d15ad41d5306c011253a0ba43aaf93dccc" "0961d780bd14561c505986166d167606239af3e2c3117265c9377e9b8204bf96" "3e34e9bf818cf6301fcabae2005bba8e61b1caba97d95509c8da78cff5f2ec8e" "b67b2279fa90e4098aa126d8356931c7a76921001ddff0a8d4a0541080dee5f6" "cabc32838ccceea97404f6fcb7ce791c6e38491fd19baa0fcfb336dcc5f6e23c" "a61109d38200252de49997a49d84045c726fa8d0f4dd637fce0b8affaa5c8620" "1d079355c721b517fdc9891f0fda927fe3f87288f2e6cc3b8566655a64ca5453" "c614d2423075491e6b7f38a4b7ea1c68f31764b9b815e35c9741e9490119efc0" "760ce657e710a77bcf6df51d97e51aae2ee7db1fba21bbad07aab0fa0f42f834" "34ed3e2fa4a1cb2ce7400c7f1a6c8f12931d8021435bad841fdc1192bd1cc7da" "b3bcf1b12ef2a7606c7697d71b934ca0bdd495d52f901e73ce008c4c9825a3aa" "70f5a47eb08fe7a4ccb88e2550d377ce085fedce81cf30c56e3077f95a2909f2" "c3e6b52caa77cb09c049d3c973798bc64b5c43cc437d449eacf35b3e776bf85c" "5a0eee1070a4fc64268f008a4c7abfda32d912118e080e18c3c865ef864d1bea" "2a7beed4f24b15f77160118320123d699282cbf196e0089f113245d4b729ba5d" "20bf9f519f78b247da9ccf974c31d3537bee613ff11579f539b2781246dee73b" default)))
+;;  '(diary-entry-marker (quote font-lock-variable-name-face))
+;;  '(emms-mode-line-icon-image-cache
+;;    (quote
+;;     (image :type xpm :ascent center :data "/* XPM */
+;; static char *note[] = {
+;; /* width height num_colors chars_per_pixel */
+;; \"    10   11        2            1\",
+;; /* colors */
+;; \". c #358d8d\",
+;; \"# c None s None\",
+;; /* pixels */
+;; \"###...####\",
+;; \"###.#...##\",
+;; \"###.###...\",
+;; \"###.#####.\",
+;; \"###.#####.\",
+;; \"#...#####.\",
+;; \"....#####.\",
+;; \"#..######.\",
+;; \"#######...\",
+;; \"######....\",
+;; \"#######..#\" };")))
+;;  '(evil-emacs-state-cursor (quote ("#D50000" hbar)))
+;;  '(evil-insert-state-cursor (quote ("#D50000" bar)))
+;;  '(evil-normal-state-cursor (quote ("#F57F17" box)))
+;;  '(evil-visual-state-cursor (quote ("#66BB6A" box)))
+;;  '(fci-rule-color "#383838")
+;;  '(gnus-logo-colors (quote ("#259ea2" "#adadad")))
+;;  '(gnus-mode-line-image-cache
+;;    (quote
+;;     (image :type xpm :ascent center :data "/* XPM */
+;; static char *gnus-pointer[] = {
+;; /* width height num_colors chars_per_pixel */
+;; \"    18    13        2            1\",
+;; /* colors */
+;; \". c #358d8d\",
+;; \"# c None s None\",
+;; /* pixels */
+;; \"##################\",
+;; \"######..##..######\",
+;; \"#####........#####\",
+;; \"#.##.##..##...####\",
+;; \"#...####.###...##.\",
+;; \"#..###.######.....\",
+;; \"#####.########...#\",
+;; \"###########.######\",
+;; \"####.###.#..######\",
+;; \"######..###.######\",
+;; \"###....####.######\",
+;; \"###..######.######\",
+;; \"###########.######\" };")))
+;;  '(highlight-indent-guides-auto-enabled nil)
+;;  '(highlight-symbol-colors
+;;    (quote
+;;     ("#F57F17" "#66BB6A" "#0097A7" "#42A5F5" "#7E57C2" "#D84315")))
+;;  '(highlight-symbol-foreground-color "#546E7A")
+;;  '(highlight-tail-colors (quote (("#F8BBD0" . 0) ("#FAFAFA" . 100))))
+;;  '(inhibit-default-init t)
+;;  '(inhibit-startup-screen t)
+;;  '(initial-scratch-message ";; well hello there... time to jam?
+;; ")
+;;  '(package-selected-packages
+;;    (quote
+;;     (omnisharp nlinum-hl yasnippet web-mode toxi-theme suscolors-theme sql-indent smooth-scrolling shader-mode neotree lua-mode js3-mode js-doc flymake-jshint dirtree cyberpunk-theme cyberpunk-2019-theme csv-mode csv csharp-mode camcorder bongo birds-of-paradise-plus-theme base16-theme auto-complete apropospriate-theme ample-zen-theme ahungry-theme abc-mode 2048-game)))
+;;  '(pos-tip-background-color "#ffffffffffff")
+;;  '(pos-tip-foreground-color "#78909C")
+;;  '(red "#ffffff")
+;;  '(show-paren-mode t)
+;;  '(standard-indent 2)
+;;  '(tabbar-background-color "#ffffffffffff")
+;;  '(tool-bar-mode nil)
+;;  '(vc-annotate-background "#3b3b3b")
+;;  '(vc-annotate-color-map
+;;    (quote
+;;     ((20 . "#dd5542")
+;;      (40 . "#CC5542")
+;;      (60 . "#fb8512")
+;;      (80 . "#baba36")
+;;      (100 . "#bdbc61")
+;;      (120 . "#7d7c61")
+;;      (140 . "#6abd50")
+;;      (160 . "#6aaf50")
+;;      (180 . "#6aa350")
+;;      (200 . "#6a9550")
+;;      (220 . "#6a8550")
+;;      (240 . "#6a7550")
+;;      (260 . "#9b55c3")
+;;      (280 . "#6CA0A3")
+;;      (300 . "#528fd1")
+;;      (320 . "#5180b3")
+;;      (340 . "#6380b3")
+;;      (360 . "#DC8CC3"))))
+;;  '(vc-annotate-very-old-color "#DC8CC3"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Liberation Mono" :foundry "outline" :slant normal :weight normal :height 98 :width normal))))
+ '(c-annotation-face ((t (:inherit font-lock-constant-face :foreground "#f5f"))))
+ '(region ((t (:background "#031")))))
+
+;; (load-theme 'abyss)
+
+(defun completion-f-n-table-ignoring-dot-suffix (fun str pred flag)
+  "Call `completion-file-name-table' with a predicate that
+ignores matches starting with a dot, unless STR starts with a
+dot."
+  (funcall fun str
+           (cond ((string-suffix-p ".meta" (file-name-nondirectory str))
+                  pred)
+                 ((not pred)
+                  (lambda (str)
+                    (not (string-suffix-p ".meta" str))))
+                 (t
+                  (lambda (str)
+                    (and (not (string-suffix-p ".meta" str))
+                         (funcall pred str)))))
+           flag))
+
+(advice-add 'completion-file-name-table :around
+            'completion-f-n-table-ignoring-dot-suffix)
+(set-face-attribute 'region nil :background "#990")
+(put 'upcase-region 'disabled nil)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (ahungry)))
+ '(custom-safe-themes
+   (quote
+    ("20bf9f519f78b247da9ccf974c31d3537bee613ff11579f539b2781246dee73b" default)))
+ '(show-paren-mode t)
+ '(tool-bar-mode nil))

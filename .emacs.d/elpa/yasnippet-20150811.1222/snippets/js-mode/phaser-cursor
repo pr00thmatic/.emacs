@@ -1,0 +1,5 @@
+# name: Phaser keyboard events
+# key: cursor
+# --
+cursor = game.input.keyboard.createCursorKeys();
+cursor.${1:nuevaTecla} = game.input.keyboard.addKey(Phaser.Keyboard.${2:A});

@@ -1,0 +1,4 @@
+#name: local ng-route for angular
+#key: localng-route
+# --
+<script src="http://localhost/public/angular/angular-route.js"></script>

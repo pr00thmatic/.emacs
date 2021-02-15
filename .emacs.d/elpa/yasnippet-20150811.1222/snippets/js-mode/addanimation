@@ -1,0 +1,4 @@
+# name: Phaser: add animation to sprite
+# key: addanimation
+# --
+${1:sprite}.animations.add('${2:name}', [${3:loop}], ${4:fps});

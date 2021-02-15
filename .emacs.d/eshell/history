@@ -1,0 +1,128 @@
+mv NMask NMask.cs
+mv Digger.cs Assets/qeqe/
+ls Assets/qeqe.meta
+ls Assets/qeqe
+mkdir Documentation
+cd Documentation/
+mkdir camera
+cd camera/
+cd ..
+mkdir input
+cd input/
+cd ..
+mkdir matrix
+cd matrix/
+mkdir big-world
+cd big-world/
+rm BoneStatus.cs
+rm BoneStatus.cs\~ 
+ls
+cd ../qeqe
+mv Undo.cs Undoer.cs
+rm err
+rm err\~
+mkdir Villager
+cd Villager/
+mkdir villager
+cd villager/
+rm Surroundings.cs
+rm Surroundings.cs.meta 
+ls
+ls *.cs
+rm asdf
+exit
+mkdir LockedBox
+cd LockedBox/
+mkdir Sold
+cd Sold/
+mkdir Roulette
+cd Roulette/l
+cd Roulette/
+cd ..
+rmdir Roulette/
+mkdir Roulette
+mkdir Santa
+cd Santa/
+mkdir blender-python
+cd blender-python/
+java Test.java
+java Test.class
+java Test
+exit
+mkdir  trash
+mv Test.* trash/
+mv Capicua.* trash/
+cd trash/
+ls
+rm *.class
+ls
+javac Capicua.java 
+javac Test.java 
+java Test.class
+javac Test.java
+java Test.java
+java Test.class
+javac Test.java
+javac Test.class 
+javac Test
+mv Test.java OdioJava.java
+javac OdioJava.java 
+javac OdioJava.java 
+javac OdioJava
+javac OdioJava.java 
+javac OdioJava
+exit
+mkdir trash
+mkdir Background
+cd Background/
+mkdir Camera
+cd Camera/
+mkdir GameSettings
+cd GameSettings/
+mv HeightClass.cs Kind.cs
+mv ProtoClass.cs ProtoKind.cs
+rm Language.cs
+rm Language.cs\~
+exit
+mv TutorialController.cs Controller.cs
+mv EventKind.cs ActionKind.cs
+mv TutorialText.cs StateController.cs
+mkdir Ads
+cd Ads/
+mkdir Scripts
+mkdir Face Manipulation
+cd Scripts/
+ls
+mv Topology.cs TopologyPersister.cs
+rm Line.cs\~
+rm Line.cs 
+rm ClothesAoE.cs
+rm PlayerStats.cs
+rm TutorialOnBeginning.cs
+rm MixComparationResult.cs 
+rm CreditsSong.cs 
+rm Detector.cs 
+mv EnemyPlayerDetector.cs ../
+mv VisitorSpawner.cs visitors/
+rm GameManager.cs 
+rm FloatingThing.cs 
+rm ChoiceTriggerer.cs 
+cd Player
+rm Hidable.cs 
+rm CollectableWeapon.cs
+rm ICanWalk.cs 
+cd ..
+rm -r Editor/
+rm EmojiSpawner.cs 
+rm Pet.cs 
+rm Professor.cs 
+rm DisposableEvent.cs 
+cd ..
+cd ..
+cd ..
+cd ..
+cd Scripts/
+rm DisposableEvent.cs 
+rm ProfessorCommands.cs 
+rm ControlRotation.cs 
+rm ClusterPoint.cs 

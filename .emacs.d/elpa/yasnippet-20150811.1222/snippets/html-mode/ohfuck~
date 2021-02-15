@@ -1,0 +1,6 @@
+<div id="event">
+  <div id="fecha">$1: ${2:<b>$3</b>}</div>
+  <div id="description">
+    $0
+  </div>
+</div>

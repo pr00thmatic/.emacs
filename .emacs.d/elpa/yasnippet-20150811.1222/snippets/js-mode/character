@@ -1,0 +1,16 @@
+var ${1:newCharacter} = ( function (character) {
+
+    character.preload = function (game) {
+	spritesheet$0
+    };
+
+    character.create = function (game) {
+	addsprite
+    };
+
+    character.update = function (cursor) {
+    };
+
+    return character;
+
+})(Character);

@@ -1,0 +1,5 @@
+# contributor: Jimmy Wu <frozenthrone88@gmail.com>
+# name: the good link
+# key: link
+# --
+<link rel="stylesheet" href="${1:url}" type="text/css" media="screen" />

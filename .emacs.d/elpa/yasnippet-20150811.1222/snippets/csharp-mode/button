@@ -1,0 +1,4 @@
+# name: GUI Button
+# key: button
+# --
+GUILayout.Button("$1")$0

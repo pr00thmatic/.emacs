@@ -1,0 +1,5 @@
+# contribbutor: r00th <vengadoravg@gmail.com>
+# name: x : y
+# key: :
+# --
+$1 : ${2:$1}$0

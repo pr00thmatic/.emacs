@@ -1,0 +1,16 @@
+#name: literal object phaser level
+#key: level
+# --
+var level = (function () {
+    var preload = function () {};
+
+    var create = function () {};
+
+    var update = function () {};
+
+    return {
+        create : create,
+        preload : preload,
+        update : update
+    };
+})();

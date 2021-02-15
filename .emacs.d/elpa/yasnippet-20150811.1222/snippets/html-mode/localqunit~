@@ -1,0 +1,4 @@
+# name: localqunit
+# key:  localqunit
+# --
+<script type="text/javascript" src="http://localhost/qunit.js"></script>

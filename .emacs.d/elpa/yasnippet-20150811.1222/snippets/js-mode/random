@@ -1,0 +1,1 @@
+Math.round(Math.random() * (${1:maximum} - ${2:minimum}) + $2);

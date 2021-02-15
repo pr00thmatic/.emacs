@@ -1,0 +1,4 @@
+# name : POST
+# key: post
+# --
+\$_POST["${1:id}"];

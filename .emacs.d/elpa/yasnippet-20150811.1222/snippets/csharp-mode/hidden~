@@ -1,0 +1,5 @@
+# name: hidden prefab configuration field
+# key: hid
+# --
+// [HideInInspector]
+[SerializeField] $0

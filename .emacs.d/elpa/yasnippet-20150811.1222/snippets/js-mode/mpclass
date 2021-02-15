@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# key: mpclass
+# --
+var ${1:name} = ( function ($2) {
+    $0
+})($3);

@@ -1,0 +1,4 @@
+# name: public property on inheritance
+# key: me.
+# --
+me.$1 = ${2:$1};$0

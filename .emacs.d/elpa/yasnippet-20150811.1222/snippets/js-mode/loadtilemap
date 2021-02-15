@@ -1,0 +1,5 @@
+# name: load tilemap
+# key: loadtilemap
+# --
+game.load.tilemap(${1:name}, ${2:file}, null, Phaser.Tilemap.TILED_JSON);
+game.load.image(${3:tileset}, ${4:file});

@@ -1,0 +1,7 @@
+# name: phasertext
+# key: phasertext
+# --
+var ${1:style} = { font: ${2:'30px Mono'}, fill: ${3:'#000'}, align: ${4:'center'} };
+${5:text} = game.add.text(${6:x}, ${7:y}, ${8:'text'}, $1);
+${9:$5.strokeThickness = ${10:2}}
+${11:$5.anchor.set(0.5,0.5)}

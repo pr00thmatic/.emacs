@@ -1,0 +1,5 @@
+# name: bootstrap input
+# key: input
+# --
+<label for="$2"> ${4:$2} </label>
+<input type="${1:text}" class="form-control" name="$2" placeholder="${3:type something}" />

@@ -1,0 +1,4 @@
+# name: load isometric plugin
+# key: preload-isophaser
+# --
+game.plugins.add(new Phaser.Plugin Isometric(game));

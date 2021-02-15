@@ -1,0 +1,7 @@
+<?php
+if (get_magic_quotes_gpc()) {
+  stripslashes$0
+}
+
+real_escape
+?>

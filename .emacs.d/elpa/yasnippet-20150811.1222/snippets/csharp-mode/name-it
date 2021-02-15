@@ -1,0 +1,4 @@
+# name: name it
+# key: name-it
+# --
+public static const string $1 = "$1";$0

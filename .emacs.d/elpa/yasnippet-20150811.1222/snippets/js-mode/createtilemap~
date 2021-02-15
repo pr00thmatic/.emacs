@@ -1,0 +1,9 @@
+# name: Phaser tilemap on create state
+# key: createtilemap
+# --
+${1:tilemap} = game.add.tilemap(${2:name}, ${3:tileWidth}, ${4:tileHeight}, ${5:width}, ${6:height});
+$1.addTileSetImage(${7:tilesetImage});
+$1.${8:layer} = $1.createLayer(${9:name});
+$1.$8.resizeWorld();
+game.physics.arcade.enable($1.$8);
+$1.setCollisionByExclusion([${10:tilesIndex}], true, $1.$8);

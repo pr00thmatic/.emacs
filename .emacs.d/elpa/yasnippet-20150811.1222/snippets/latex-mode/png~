@@ -1,0 +1,1 @@
+\includegraphics[${1:width=${2:.9}\textwidth}]{$0}

@@ -1,0 +1,4 @@
+# name: local bootstrap js package.
+# key: localbootstrap
+# --
+<script type="text/javascript" src="http://localhost/public/bootstrap/bootstrap-3.0.0/dist/js/bootstrap.min.js"> </script>

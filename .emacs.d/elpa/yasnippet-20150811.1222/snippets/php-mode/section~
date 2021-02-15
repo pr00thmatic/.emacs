@@ -1,0 +1,3 @@
+<section role="${what-kind}" id="${its-name}">
+  ${}
+</section>

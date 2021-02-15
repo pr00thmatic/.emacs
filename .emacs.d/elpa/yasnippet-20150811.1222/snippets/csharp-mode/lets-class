@@ -1,0 +1,11 @@
+# name: lets class!
+# key: lets-jam
+# --
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+[System.Serializable]
+public class ${1:`(file-name-base buffer-file-name)`} {
+    $0
+}

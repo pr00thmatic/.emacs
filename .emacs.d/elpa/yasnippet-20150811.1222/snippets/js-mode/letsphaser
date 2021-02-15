@@ -1,0 +1,12 @@
+newgame
+
+function preload() {
+    loadimage
+    loadsprite
+}
+
+function create() {
+    physicsarcade
+    newgroup
+}
+

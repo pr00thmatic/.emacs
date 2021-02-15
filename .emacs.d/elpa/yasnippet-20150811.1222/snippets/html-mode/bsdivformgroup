@@ -1,0 +1,6 @@
+# name: bs div form-group
+# key: form-group
+# --
+<div class="form-group">
+  $0
+</div>

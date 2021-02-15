@@ -1,0 +1,4 @@
+# name: bootstrap button
+# key: button
+# --
+<button type="button" class="btn btn-${1:default}"> $0 </button>

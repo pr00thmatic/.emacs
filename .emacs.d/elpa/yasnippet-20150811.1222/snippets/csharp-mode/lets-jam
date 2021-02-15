@@ -1,0 +1,7 @@
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+public class ${1:`(file-name-base buffer-file-name)`} : MonoBehaviour {
+       $0
+}

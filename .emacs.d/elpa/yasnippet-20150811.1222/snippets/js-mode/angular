@@ -1,0 +1,7 @@
+#name: angular skeleton
+#key: lets-jam
+# --
+angular.module('${1:app}', [])
+    .controller('${2:TheController}', function ($3) {
+        $0
+    });

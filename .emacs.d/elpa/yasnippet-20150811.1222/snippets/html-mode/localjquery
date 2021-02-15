@@ -1,0 +1,4 @@
+# name: local jquery.js
+# key: localjquery
+# --
+<script type="text/javascript" src="http://localhost/public/jquery.min.js"></script>
