@@ -1,4 +1,3 @@
-mv NMask NMask.cs
 mv Digger.cs Assets/qeqe/
 ls Assets/qeqe.meta
 ls Assets/qeqe
@@ -126,3 +125,4 @@ rm DisposableEvent.cs
 rm ProfessorCommands.cs 
 rm ControlRotation.cs 
 rm ClusterPoint.cs 
+touch erase-me-lol
