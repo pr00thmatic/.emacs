@@ -1,34 +1,3 @@
-mv Digger.cs Assets/qeqe/
-ls Assets/qeqe.meta
-ls Assets/qeqe
-mkdir Documentation
-cd Documentation/
-mkdir camera
-cd camera/
-cd ..
-mkdir input
-cd input/
-cd ..
-mkdir matrix
-cd matrix/
-mkdir big-world
-cd big-world/
-rm BoneStatus.cs
-rm BoneStatus.cs\~ 
-ls
-cd ../qeqe
-mv Undo.cs Undoer.cs
-rm err
-rm err\~
-mkdir Villager
-cd Villager/
-mkdir villager
-cd villager/
-rm Surroundings.cs
-rm Surroundings.cs.meta 
-ls
-ls *.cs
-rm asdf
 exit
 mkdir LockedBox
 cd LockedBox/
@@ -126,3 +95,34 @@ rm ProfessorCommands.cs
 rm ControlRotation.cs 
 rm ClusterPoint.cs 
 touch erase-me-lol
+g++ -o A.exe A.cpp
+g++ -o A.exe A.cpp
+g++ -o A.exe A.cpp
+./A
+./A.exe
+clear 1
+g++ -o A.exe A.cpp && ./A.exe
+g++ -o A.exe A.cpp && ./A.exe
+g++ -o A.exe A.cpp && ./A.exe
+clear 1
+g++ -o A.exe A.cpp && ./A.exe
+g++ -o A.exe A.cpp && ./A.exe
+g++ -o A.exe A.cpp && ./A.exe
+g++ -o A.exe A.cpp && ./A.exe
+clear 163: 9, 64
+clear 
+clear 1
+clear 1
+g++ -o A.exe A.cpp && ./A.exe
+clear 1
+g++ -o A.exe A.cpp && ./A.exe
+g++ -o A.exe A.cpp && ./A.exe
+g++ -o A.exe A.cpp && ./A.exe
+clear 1
+clear 1
+g++ -o A.exe A.cpp && ./A.exe
+clear 1
+g++ -o A.exe A.cpp && ./A.exe
+clear 1
+g++ -o A.exe A.cpp && ./A.exe
+exit

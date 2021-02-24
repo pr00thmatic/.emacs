@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 
-[CustomEditor(typeof(${2:`(file-name-base buffer-file-name)`}))]
+[CustomEditor(typeof(${2:$1}))]
 public class ${1:`(file-name-base buffer-file-name)`} : Editor {
     $2 Target { get => ($2) target; }
 
