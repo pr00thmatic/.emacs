@@ -1,6 +1,3 @@
-exit
-mkdir LockedBox
-cd LockedBox/
 mkdir Sold
 cd Sold/
 mkdir Roulette
@@ -126,3 +123,6 @@ g++ -o A.exe A.cpp && ./A.exe
 clear 1
 g++ -o A.exe A.cpp && ./A.exe
 exit
+rm Undo.cs 
+rm JsonedUserInfo.cs 
+rm MultimediaCloudData.cs 

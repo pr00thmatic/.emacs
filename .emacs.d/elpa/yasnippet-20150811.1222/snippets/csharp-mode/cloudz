@@ -1,0 +1,12 @@
+WWWForm form = new WWWForm();
+form.AddField("id", ThisUserInfo.info.id);
+
+using (UnityWebRequest request = UnityWebRequest.Post(${1:"https://"}, form)) {
+  yield return request.SendWebRequest();
+
+  if (request.isNetworkError) {
+
+  } else {
+
+  }
+}
