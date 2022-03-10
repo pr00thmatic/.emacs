@@ -1,0 +1,12 @@
+# name: playcanvas!
+# key: lets-jam
+# --
+(() => {
+  var ${1:`(pascal-case (file-name-base buffer-file-name))`} = pc.createScript('${2:`(camel-case (file-name-base buffer-file-name))`}');
+
+  $1.prototype.initialize = function () {$0
+  };
+
+  $1.prototype.update = function (dt) {
+  };
+})();

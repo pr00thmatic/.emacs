@@ -1,30 +1,40 @@
 # name: phaser esqueleton
-# key: lets-phaser
+# key: lets-jam
 # --
+var scene;
+var gameStatus = {};
 var mainState = ( function () {
 
-    var preload = function () {
-        $0//game.load.image(name, dir); or spritesheet
-    }
+  var preload = function () {
+    scene = this;
+    $0//game.load.image(name, dir); or spritesheet, or text
+  }
 
-    var create = function () {
-        // game.physics.startSystem(Phaser.Physics.ARCADE); or ninja, or p2
-        // game.add.tileSprite(0,0, width, height, image, 0)
-        // or game.stage.backgroundColor = "#rrggbb"
-    }
+  var create = function () {
+    gameStatus.emitter = new Phaser.Events.EventEmitter();
+    // game.physics.startSystem(Phaser.Physics.ARCADE); or ninja, or p2
+    // game.add.tileSprite(0,0, width, height, image, 0)
+    // or game.stage.backgroundColor = "#rrggbb"
+    gameStatus.emitter.emit('create');
+  }
 
-    var update = function () {
+  var update = function (time, deltaTime) {
+    gameStatus.deltaTime = deltaTime / 1000;
+    gameStatus.emitter.emit('update');
+  };
 
-    };
-
-    return { preload : preload,
+  return { type: Phaser.WEBGL,
+           width: ${1:width},
+           height: ${2:height},
+           scene: {
+             preload : preload,
              create : create,
-             update : update };
+             update : update
+           }
+         };
 
 })();
 
-var game = new Phaser.Game(${1:width}, ${2:height}, Phaser.AUTO, '${3:div id}');
-game.state.add('main', mainState);
-game.state.start('main');
+var game = new Phaser.Game(mainState);
 // width = $1. accessible from game.world.width
 // height = $2 acccessible from game.world.height

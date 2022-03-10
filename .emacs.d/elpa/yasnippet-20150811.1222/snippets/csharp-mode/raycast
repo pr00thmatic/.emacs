@@ -1,0 +1,1 @@
+Physics.Raycast(${1:origin}, ${2:direction}, out ${3:hit}, ${4:maxDistance})

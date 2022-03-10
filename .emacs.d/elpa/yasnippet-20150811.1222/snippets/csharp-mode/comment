@@ -1,7 +1,7 @@
 # contributor: Alejandro Espinoza Esparza <aespinoza@structum.com.mx>
 # name: /// <summary> ... </summary>
-# key: comment
+# key: bla
 # --
 /// <summary>
-/// $1
+/// $0
 /// </summary>

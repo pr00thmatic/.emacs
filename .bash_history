@@ -1,500 +1,500 @@
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < rebel.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < A.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < stress.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < stress.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < stress.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < stress.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < stress.in
-g++ -o CleverA2.exe CleverA2.cpp && ./CleverA2.exe < A.in
-cd /d/Projects2020/VRClassroom/
-cd VRClassroom/
+cd ../VRClassroom/VRClassroom/
 git status
 git add .
-git commit -m "lilcanvas working"
-git status
-cd ../
-cd -
-git status
-git add .
-git commit -m "unsaved changes"
-cd ../Player\ 2/
-git remote -v
-git remote add local /d/Projects2020/VRClassroom/VRClassroom/
-git pull local master
-git status
-cd -
-git status
-git add .
-git commit -m "faster debuggin'"
-cd -
-git pull local master
-git status
-git add .
-git stash
-cd -
-git checkout --
-git checkout HEAD~
-git switch -
-git reset --hard HEAD~
-git status
-cd -
-git pull local master
-cd -
-git status
-git log
-git checkout HEAD~ Assets/_VRClassroom/01_Scenes/school.unity
-git log
-git status
-git commit -m "huh?"
-cd -
-git pull local master
-git status
-cd -
-git add .
-git commit -m "debug teleportin'"
-cd -
-git pull local master
-git log
-git pull local master
-git checkout local Assets/_VRClassroom/01_Scenes/school.unity
-git checkout -- Assets/_VRClassroom/01_Scenes/school.unity
-cp ../VRClassroom/Assets/_VRClassroom/01_Scenes/school.unity Assets/_VRClassroom/01_Scenes/school.unity 
-git status
-git add .
-git commit -m "wtf"
-cd /d/External/pr00thmatic.github.io/
-git status
-git add .
-git commit -m "hopefully the last version of the atm"
-git push origin master
-cd ../Relativity/Untitled-terror/
-git status
-git add .
-git stash
-git checkout main
-git pull origin main
-git checkout -b usable-controls
-git status
-git status
-git status
-git status
-git diff *.cs
-git diff *.cs
-git add .
-git commit -m "more responsive duende motion"
-git push origin usable-controls 
-cd /d/External/Relativity/Untitled-terror/
-git status
-git status
-git add .
-git commit -m "cleaning up blends"
-git status
-git diff *.cs
-git add .
-git commit -m "jump as in the mockup"
-git push origin usable-controls 
-git status
-git add .
-git stash
-git stash pop
-git status
-git diff *.cs
-git add .
-git commit -m "clean extra configuration variables on Player.cs"
-git push origin usable-controls 
-git status
-git add .
-it commit -m "unsaved changes"
-git push origin usable-controls 
-cd /d/External/
-ls
-cd /d/External/AncestralGods/derechosnna/
+git commit -m "STABLE VERSION"
+mkdir ../keep
+cp Assets/Models/3er_Piso.fbx ../keep/
+cp -r Assets/_VRClassroom/01_Scenes/3rd\ floo* ../keep/
+ls ../keep/
+git -v
 git branch -v
-git checkout feature/house-dialogues 
-git add .
-git stash
-git checkout feature/house-dialogues 
-git status
-cd /d/External/Relativity/Untitled-terror/
+git checkout pc
+git checkout roll-back Assets/_VRClassroom/Prefabs/3rd\ floor.prefab
+git checkout roll-back
 git status
 git add .
-git diff *.cs HEAD
-git diff HEAD *.cs 
-git commit -m "very raw ledge grabbin'"
-git commit -m "very raw ledge grabbin' when jumpin'"
-git push origin usable-controls 
-git status
-git diff *.cs
+git commit -m "bringing oculus 3rd floor to pc"
+git checkout roll-back 
+git checkout pc 
+git checkout roll-back Assets/_VRClassroom/Prefabs/3rd\ floor/
+git checkout roll-back
 git add .
-git commit -m "new hanging controls"
-git push origin usable-controls 
+git commit -m "updated 3rd floor prefab"
+git checkout roll-back
+git checkout pc
 git status
-git diff *.cs
-git status
-git diff *.cs
-git status
-git diff *.cs
-git add .
-git commit -m "translation patch for hanging animation"
-git push origin usable-controls 
-git status
-git diff *.cs
-git add .
-git commit -m "fix broken backwards when climbing down"
-git push origin usable-controls 
-git status
-cd /d/Projects2020/Jugueteria/
+cd ../../VRClassroom_V2/
 git status
 git add .
-git commit -m "we have a car, but it's not selectable yet"
-cd /d/External/pr00thmatic.github.io/
-git status
-git add .
-git commit -m "local babylon library o_O"
-git push origin master
+cd ../player2_v2/
+in master
+git pull origin master
 cd -
+atus
 git status
-git diff *.cs
-git diff *.cs
-git add .
-git stash
-cd ../../External/Relativity/Untitled-terror/
-git status
-git log
-cd ~
-git status
-git add .
-git status
-git add .
-git status
-gi tadd .
-git commit -m "fixing edit script snippet"
-it push origin master
-git push origin master
-rm -rf .ssh/
-git status
-git add .
-git commit -m "ooooooops"
-gi tpush origin master
-git push origin master
-ssh-keygen
-cat .ssh/id_rsa.pub 
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC5zbXeSr1Rf2mfxW2H2wT/EU2JTnyqdpbAEayD01qUke4JrL9VWbT5SiwBOfWHrwxXUcrjCcK7YNG3Vk8httcP2Yh7UzpcNsOF2oeSbWMA9GJxUO6RMtqeSQaJPSewy5zWG+kBOaUi+h58cc8jIetGEgGtIS9lok0fN/YZUvY/OBhzy6kpcy+tKBXf3wZogJ1TtiVCiHL3By+8ys7u3QNX++38ehoahsqOl48i1BojdE/wU9jSh3gbdy8OyJUE8Lm2LMnWyae+1exPE2Eto/2LZ0G7rcmh0lHeNIAx6oPjL1yJXk90vgOHVBDd/lBVj9AA0S3bXpZCYYzrECurVH59x7MXvAIZF0C9Zztpcuft9FIU85LytJjW/rGD1GvK+UcNA5QtCKxmEpCpDl9nx+8OIwiprUTDWKo5rbrRPebL6LjrgTIGGwzToJLJOSz5Sg+Pq5hQsZfFTui+Ezuz4Cq8RZsAK0SL4hPMPv48ql+y4i3NDVWEhAUODM/cpmuvO+8= vreality-mvgraph@VREALITY-MVGRAPH
-cd /d/External/Relativity/
-cd Untitled-terror/
-git status
-git diff *.cs
-git diff *.cs
-git add .
-git commit -m "a better cliff detector (there is a bug when cliff is facing a wall)"
-git push origin usable-controls 
-git status
-cd /d/Projects2020/Jugueteria/
-git status
-git add .
-cd /d/External/pr00/IP/
-ls
-cd Hypnogogia/
-git init
-git remote add origin git@github.com:pr00thmatic/Hypnogogia.git
+git commit -m "pumping up"
+cd -
 git pull origin master
 git status
 git add .
-git commit -m "initial commit"
-git push origin master
-git status
+git commit -m "idk"
+git pull origin master
+cd -
 git add .
-git commit -m "a sky! (also, shaders broooooo)"
-git push origin master
-git status
-git add .
-git commit -m "unsaved changes"
-git push origin master
-cd /d/External/Relativity/Untitled-terror/
-git status
-git add .
-git stash
-git pull origin main
-git pull origin main
-git status
-git status
-git checkout -- Assets/_Relativity/Models/Room/FullRoom/TEASER01_002.fbx.meta
-git status
-git add .
-git stash
-git pull origin main
-git status
-git add .
-git commit -m "animations"
-git push origin main
-git status
-git add .
-git commit -m "solidified textures to repair seams"
-git push origin main
-git status
-git add .
-git commit -m "unsaved changes"
-git push origin main
-git status
-cd /d/External/pr00thmatic.github.io/
-git status
-git commit -m "my precious"
-git add .
-git commit -m "my precious"
-git push origin master
-git checkout -- old/img/loading.png
-git status
+git commit -m "player list"
+cd -
+git pull origin master
+cd -
+add .
 git add .
 git commit -m "oops"
-git push origin master
-git status
-git status
-cd /d/External/pr00/IP/Hypnogogia/
-git status
+cd -
+git pull origin master
+cd /d/Projects2020/VRClassroom/player2/
+cd ../VRClassroom/
 git add .
-git status
+git comit -m "pc stable baked"
+git commit -m "pc stable baked"
+cd -
+git remote -v
+git checkout pc
 git add .
+git stash
+git checkout pc
+git pull origin pc
+cd -
 git status
-git commit -m "facade! (maybe make clothes black on dawn and dusk?) (windows lights need to be enabled/disabled when facade is enabled/disabled)
-"
-git push origin master
-cd /d/External/pr00/IP/Hypnogogia/
-git status
-git add .
-git commit -m "unsaved changes"
-git push origin master
-cd /d/Projects2020/VRClassroom
-git status
-cd VRClassroom/
+cd /d/External/pr00/BRANCH/src/
+ls
+cd ../src_v2/
+./main.exe 
+./main.exe 
+cd d:/External/pr00thmatic.github.io/vreality/phaser-practice/01_wakl/
+http-serve
+cd D:\pulse\pulse-master
+cd D\pulse\pulse-master
+cd /D\pulse\pulse-master
+cd /D/pulse/pulse-master
+conda env create -n pulse -f pulse.yml
+cd '/d/External/ProjectNadia/Assets/Models/surveillance room materials'
+cd /d/External/pr00/SurveillanceCamera/
+cp ../IP/Hypnogogia/.gitignore 
+cp ../IP/Hypnogogia/.gitignore ./
 git init
-cp ../../JugueteriaMixUnity/.gitignore ./
 git status
 git add .
-git commit -m "i need a 2nd player"
-cd ../
-mkdir player2
-cd player2
-git init
-git remote add origin "/d/Projects2020/VRClassroom/VRClassroom"
-git pull origin master
-cd /d/Projects2020/VRClassroom
-cd VRClassroom/
+git add Bin/SurveillancePlan.unitypackage 
+git add -f Bin/SurveillancePlan.unitypackage 
 git status
-git diff *.cs
-git diff *.cs
-git add .
-git commit -m "media list via backend"
-git status
-git add .
-git commit -m "refactor pizarra"
-cd ../player2/
-git pull origin master
-git status
-git add .
-git stash
-git pull origin master
-git status
-cd -
-git status
-git add .
-git commit -m "woopsey"
-cd -
-git pull origin master
-cd -
-git status
-git add .
-git commit -m "woopsey2"
-cd -
-git pull origin master
-cd /d/External/pr00/IP/Hypnogogia/
-git status
-git add .
-git commit -m "title screen"
+git commit -m "you creep ono"
 git push origin master
-cd /d/External/pr00/IP/Hypnogogia/
-git status
-git add .
-git commit -m "Hypnogogia font"
+git remote add origin git@github.com:pr00thmatic/UnitySurveillancePlan__o_o.git
 git push origin master
-cd /d/Projects2020/VRClassroom/VRClassroom/
-git status
-git add .
-git status
-git commit -m "offline image display"
-cd ../player2/
 git pull origin master
-cd /d/External/pr00/IP/Hypnogogia/
-git status
-git add .
-git commit -m "FALKAAAAAA"
+git 
+git pull origin master --allow-unrelated-histories
 git push origin master
 git status
+cd /d/Projects2021/Juegos\ CEMSE/
+ls
+cd ordenar/
+http-server
+cd ..
+http-server
+cd /d/External/pr00thmatic.github.io/
+cd vreality/Juegos-CEMSE/
+http-server
+git status
 git add .
-git commit -m "los huesos de rafa"
+git commit -m "ok, this is kind of cool"
 git push origin master
-cd /d/Projects2020/VRClassroom/VRClassroom/
+http-server
 git status
 git add .
-git commit -m "stable enough lists"
-cd ../player2/
-git pull origin master
-git status
-git add .
-cd -
-git add .
-git commit -m "thumbnails"
-cd -
-git pull origin master
-git status
-cd -
-git status
-git add .
-git commit -m "wip"
-cd /d/External/pr00/IP/Hypnogogia/
-git status
-git add .
-git commit -m "Rafa can walk now"
+git commit -m "editor"
 git push origin master
+http-server
 git status
-cd /d/External/Relativity/Untitled-terror/
-git status
-git status
-git add .
-git commit -m "dominic is in the teaser room now, he can walk, jump and climb"
-git push origin dominic-in-teaser-room 
-git checkout main
-git merge dominic-in-teaser-room 
-git branch -d dominic-in-teaser-room 
-git push origin --delete dominic-in-teaser-room
-git push origin main
-git add .
-git stash
-git checkout -b put-npc-in-teaser-room
-git stash pop
-git add .
-git commit -m "(unstable) just copy everything into the scene"
-git status
-git add .
-git diff HEAD *.cs
-git diff HEAD *.cs
-git add .
-git commit -m "npc and his events into teaser scene"
-git push origin put-npc-in-teaser-room 
-git checkout main
-git merge put-npc-in-teaser-room
-git push origin main
-git branch -d 
-git branch -d put-npc-in-teaser-room 
-git push origin --delete put-npc-in-teaser-room 
-cd /d/Projects2020/
-cd VRClassroom
-cd VRClassroom/
-git status
-git add .
-git commit -m "problems building"
-git status
-git add .
-git stash
-git status
-git add .
-git stash
-git checkout sound
-cd /d/External/Relativity/Untitled-terror/
-git status
-git fetch
-git pull origin main
-git checkout sound
-git pull origin sound
-git status
-cd /d/External/Relativity/
-cd Untitled-terror/
-git status
-git add .
-git stash
-git checkout master
-git checkout main
-git stash pop
-git add .
-git add .
-git commit -m "root motion test"
-git push origin main
-git status
-git checkout -b telekinesis
-git status
-git status
-git add .
-git commit -m "wip telekinesis deciding"
-git push origin telekinesis 
-git status
-git diff *.cs
-git add .
-git commit -m "telekinesis select direction"
-git push origin telekinesis 
-git status
-git diff *.cs
+git diff
 git add .
 git commit -m "refactor"
-git push origin telekinesis
+http-server
 git status
-git diff *.cs
+git diff *.js
 git status
-git diff *.cs
+git diff *.js
+git diff
+git diff *.js
 git status
-git diff *.cs
+git diff sopa-de-letras/*.js
 git add .
-git commit -m "telekinesis selection"
-git push origin telekinesis 
+git commit -m "modo edicion"
+git push origin master
+git add .
+git commit -m "oops"
+git add .
+cd add -A
+git add -A
+git commit -m "oops"
+git push origin master
+http-server
+mkdir palabra-faltante/assets
+http-server
+cd /d/External/pr00thmatic.github.io/vreality/Juegos-CEMSE/
+http-server
 git status
-git diff *.cs
+rm AnimatedTiles.min.js 
+http-server
+git status
+git add -A
+git commit -m "palabra faltante... con muchos hackz"
+git push origin master
+git status
+git add -A
+git commit -m "wtf?!"
+git push origin master
+http-server
+git add -A
+git commit -m "smaller fill words"
+git push origin master
+cd /d/External/pr00thmatic.github.io/vreality/Juegos-CEMSE/
+http-server
+cd /d/External/pr00thmatic.github.io/
+cd vreality/Juegos-CEMSE/
+http-server
+ls
+ls *.html
+http-server
+git status
+git add .
+git commit -m "backspace!"
+git push origin master
+http-server
+git status
+git add -A
+http-server
+git status
+git add -A
+git commit -m "u need to refactor the sopa's sopa! crucigrama is ready"
+http-server
+git status
+git diff
+git status
+git add -A
+git commit -m "keyboard wasn't working"
+git commit --amend -m "keyboard wasn't deleting the special keys while game mode"
+git push origin master
+http-server
+d /d/External/pr00thmatic.github.io/
+cd /d/External/pr00thmatic.github.io/
+cd vreality/Juegos-CEMSE/
+http-server
+git status
+git status
+git add -A
+git commit -m "adivina adivinador"
+git push origin master
+git statsu
+git status
+git add -A
+git commit -m "DX"
+git push origin master
+http-server
+cd /d/External/pr00thmatic.github.io/
+git add -A
+git commit -m "connectar"
+git push origin master
+cd vreality/Juegos-CEMSE/
+http-server
+cd E:\My First Project
+cd /E/My First Project
+cd /e/My\ First\ Project/
+http-server
+cd /d/External/PC\ Xmas/
+git init
+cp /e/pr00/Hypnogogia/.gitignore ./
+git add .
+git remote add origin git@github.com:pr00thmatic/PC-Xmas.git
+git status
+git checkout -b why-again
+git push --force origin why-again
+git push origin why-again
+git status
+git push origin why-again
+git commit -m "r u f-ing sirius?"
+git push --force origin why-again
+git status
+git add .
+git commit -m "good houses and bad houses"
+git push origin why-again
+git status
+cd /d/External/PC\ Xmas/
+git status
+git add .
+git commit -m "gifts!"
+git push origin why-again
+git status
+cd /d/External/PC\ Xmas/
+git status
+git add .
+git commit -m "cozzy store and... hadn't uploaded wrecked santa? why? o_O"
+git push origin why-again 
+cd /d/External/PC\ Xmas/
+git status
+git add .
+git commit -m "Y U NOT COMMIT >:("
+git push origin why-again
+git status
+git add .
+git commit -m "did it explode? - also, north pole areas with cameras"
+git push origin why-again
+git status
+git add .
+git commit -m "Santa's vibing xD"
+git push origin why-again
+git status
+git add .
+git commit -m "implemented Santa's acceleration and balanced fall levels"
+git push origin why-again
+cd /e/Blender
+blender.exe
+./blender.exe
+./blender.exe
+./blender.exe
+./blender.exe
+./blender.exe
+./blender.exe
+cd C:\Program Files\Blender Foundation\Blender 3.0
+cd "/C/Program Files/Blender Foundation\Blender 3.0"
+ls
+./blender.exe
+cd /d/External/PC\ Xmas/
+git status
+git add .
+gitt commit -m "santa's body, gifts and some indicators"
+git commit -m "santa's body, gifts and some indicators"
+git push origin why-again
+cd /e/pr00/Hypnogogia/
+git status
+git add .
+git status
+git status
+git status
+git status
+git add .
+git commit -m "elevator, stairs and wip cajas... just level design for now"
+git push origin master
+git status
+git add .
+git commit -m "wip cajero"
+git branch -v
+git add .
+git commit -m "caja"
+git push origin master
+git checkout unknown-changes 
+git status
+git diff master
+git diff master --one-line
+git diff master --name-only
+git checkout master ProjectSettings/
+git checkout master Packages/
+git checkout UserSettings/
+git diff master --name-only
+git status
+git commit -m "I think this was what broke the project"
+git status
+git status
+git checkout master Assets/Input/TheInput.cs
+git checkout master Assets/Input/TheInput.inputactions
+git checkout master Assets/Input/TheInput.inputactions.meta
+git status
+git add .
+it commit -m "the vagabundo psb seem to have broken it too"
+git commit -m "the vagabundo psb seem to have broken it too"
+git checkout master
+git merge unknown-changes 
+git status
+git checkout --ours Assets/Scenes/Main.unity
+git checkout --ours UserSettings/EditorUserSettings.asset
+git status
+git status
+git add .
+git commit -m "the new changes are here"
+git log
+git status
+git add .
+git commit -m "rough motion between stairs and more level design"
+git push origin master
+git status
+git add .
+git commit -m "Rafa back view"
+git push origin master
+git status
+cd /d/Projects2020/VRClassroom
+ls
+cd VRClassroom/
+git status
+git add .
+git commit -m "uncommited changes from some months ago"
+cd /e/pr00/Hypnogogia/
+git status
+git status
+git add .
+git commit -m "mask for rafa's noodle arms"
+git push origin master
+cd /d/External/pr00thmatic.github.io/
+git status
+git add .
+git status
+git status
+git add .
+git commit -m "a new portfolio o__o'"
+git push origin master
+git status
+ls
+git commit --allow-empty -m "Trigger rebuild"
+git push origin master
+git pull origin master
+git push origin master
+git status
+git add .
+git commit -m "?? let's see if it updates after this"
+git push origin master
+cd /d/External/pr00thmatic.github.io/
+git status
+git add .
+git commit -m "some icos"
+git push origin master
+cd /d/External/pr00thmatic.github.io/
+git status
+git add .
+git commit -m "the youtube player hack I found wasn't working on mobile ;_;"
+git push origin master
+cd /d/External/pr00thmatic.github.io/
+git status
+git add .
+git commit -m "more games"
+git push origin master
+git status
+git status
+git add .
+git commit -m "y u not upload"
+it push origin master
+git push origin master
+cd ..
+git clone git@github.com:pr00thmatic/conDiplomat.git
+cd -
+git status
+git add .
+git commit -m "even more games"
+git status
+git add .
+git commit -m "owo"
+it push origin master
+git push origin master
+git status
+git status
+git add .
+git commit -m "wahappa'"
+git push origin master
+cd /d/External/pr00thmatic.github.io/
+git status
+git add .
+git commit -m "no longer a wip!"
+git push origin master
+git add .
+t commit -m "y u not reload >:v"
+git commit -m "y u not reload >:v"
+git push origin master
+git status
+git add .
+git commit -m "some corrections by Axel O'Donell (@AxelNamikaze) thx! <3"
+git push origin master
+git status
+git add .
+git commit -m "still living at the last year xD"
+git push origin master
+git status
+cd /d/External/pr00thmatic.github.io/
+git status
+git add .
+git commit -m "oops, forgot to update firebot's description"
+git push origin master
+cd D:\Projects2021\PawPatrol\puzzle chase
+cd /D/Projects2021/PawPatrol/puzzle chase
+cd D:/Projects2021/PawPatrol/puzzle chase
+cd /d/Projects2021/PawPatrol/puzzle\ chase/
+git status
+http-server
+cd /e/pr00/Hypnogogia/
+git status
+git add .
+git commit -m "getting ready for 2.5D"
+git push origin master
+git checkout -b 2.5D
+git status
+git add .
+git commit -m "3D colliders for floor and Rafa"
+ipconfig
+ping 192.168.1.2
+ping google.com
+traceroute google.com
+tracert google.com
+tracert https://google.com
+tracert https://www.google.com
+tracert http://www.google.com
+ping google.com
+cd /e/pr00/Hypnogogia/
+git status
+git add .
+git commit -m "wip: convert colliders to 3D"
+git push origin 2.5D
+git checkout master
+cd /d/External/pr00thmatic.github.io/
+http-server
+git status
+git add .
+git commit -m "coding"
+git push origin master
+http-server
+cd /d/External/pr00thmatic.github.io/
+git status
+http-server
+git status
 git add .
 git add .
 git status
-git commit -m "wip: posessed objects control"
-git push origin telekinesis
-cd /d/External/Relativity/Untitled-terror/
+git commit -m "AI segment almost ready"
+git commit --amend -m "AI segment almost ready but nuclear war seems inminent and I need to play Stardew Valley :C"
+git push origin master
+cd /e/pr00/Hypnogogia/
 git status
 git add .
+git commit -m "drink!"
+git push origin master
+cd /e/pr00/Hypnogogia/
 git status
 git add .
-git commit -m "telekinesis fuel and lil refactor"
-git status
-git push origin telekinesis 
-git status
-git add .
-git status
-git status
-git commit -m "config tunning and disabled kinetic bar refilling without exploiting"
-git push origin telekinesis 
-git checkout main
-git merge telekinesis 
-git branch -d telekinesis 
-git push origin --delete telekinesis
-git push origin main
-cd /d/External/Relativity/Untitled-terror/
+git commit -m "vending machine graphicz"
+git push origin master
 git status
 git add .
-git stash
-git checkout -b dominic-root-motion
-git stash pop
+git commit -m "wip: vending machine"
+git push origin master
+cd /d/External/pr00thmatic.github.io/
+http-server
+git status
 git add .
-git commit -m "motion, wip: jump"
-git push origin dominic-root-motion 
+git commit -m "friends section"
+git push origin master
+cd /d/External/pr00thmatic.github.io/
+git status
+http-server
+git status
+git add .
+git commit -m "I finally have friends :')"
+git push origin master
+git status
+git add .
+git commit -m "forgot to update Gabriel's pic link to his portfolio >__<"
+git push origin master

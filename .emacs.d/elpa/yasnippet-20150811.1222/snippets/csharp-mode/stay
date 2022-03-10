@@ -1,0 +1,6 @@
+# name: 2D
+# key: stay
+# --
+void OnTriggerStay2D (Collider2D c) {
+  $0
+\}
