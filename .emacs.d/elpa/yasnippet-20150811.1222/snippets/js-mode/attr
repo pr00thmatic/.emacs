@@ -1,0 +1,8 @@
+# name: attribute for play canvas
+# key: atr
+# --
+${3:`
+  (concat (upcase (substring (file-name-base buffer-file-name) 0 1)) (substring (file-name-base buffer-file-name) 1))
+`}.attributes.add('$1', {
+  type: '$2'
+});$0

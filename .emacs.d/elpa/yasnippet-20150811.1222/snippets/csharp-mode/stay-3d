@@ -1,0 +1,6 @@
+# name: 3D
+# key: stay
+# --
+void OnTriggerStay (Collider c) {
+  $0
+\}

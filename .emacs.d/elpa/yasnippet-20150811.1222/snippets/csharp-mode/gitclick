@@ -1,0 +1,4 @@
+RaycastHit hit;
+if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit)) {
+  $0
+}

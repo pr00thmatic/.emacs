@@ -1,0 +1,2 @@
+;;; Generated package description from c:/Users/vreality-mvgraph/Emacs/.emacs.d/elpa/qrencode-20211010.1334/qrencode.el  -*- no-byte-compile: t -*-
+(define-package "qrencode" "20211010.1334" "QRCode encoder" '((emacs "25.1")) :commit "a2c51cd1d54d507ec1902bc5c7bc888fe5a23c8d" :authors '(("Rüdiger Sonderfeld" . "ruediger@c-plusplus.net")) :maintainer '("Rüdiger Sonderfeld" . "ruediger@c-plusplus.net") :keywords '("qrcode" "comm") :url "https://github.com/ruediger/qrencode-el")
